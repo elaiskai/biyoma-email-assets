@@ -1,0 +1,107 @@
+<!--
+BIYOMA · Signup popup mockup
+Trigger: 30 sec delay from page load
+Goal: 15% discount + email capture
+Welcome #1 delivers actual code (per feedback_discount_codes_via_welcome_email memory)
+-->
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BIYOMA signup popup</title>
+<style>
+  body { margin:0; padding:0; background:#5d3ba5; min-height:100vh; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif; }
+  .backdrop { position:fixed; inset:0; background:rgba(40,20,80,0.55); display:flex; align-items:center; justify-content:center; padding:20px; }
+  .popup {
+    background:#ffffff; border-radius:12px; max-width:440px; width:100%;
+    padding:44px 36px 32px; box-shadow:0 24px 60px rgba(0,0,0,0.3);
+    position:relative; text-align:center;
+  }
+  .close { position:absolute; top:14px; right:18px; font-size:22px; color:#888; cursor:pointer; line-height:1; }
+  .logo { font-family:Arial,Helvetica,sans-serif; font-weight:900; letter-spacing:1px; font-size:24px; color:#111; margin-bottom:4px; }
+  .logo sup { font-size:11px; }
+  .logo-tag { font-size:9px; letter-spacing:3px; color:#888; text-transform:uppercase; margin-bottom:28px; }
+  .badge {
+    display:inline-block; background:#5d3ba5; color:#ffffff; padding:6px 14px;
+    border-radius:20px; font-size:11px; font-weight:700; letter-spacing:1.5px;
+    text-transform:uppercase; margin-bottom:18px;
+  }
+  .headline {
+    font-family:Arial,Helvetica,sans-serif; font-size:24px; font-weight:800;
+    color:#111111; line-height:1.2; letter-spacing:-0.01em; margin-bottom:10px;
+    text-transform:uppercase;
+  }
+  .headline em {
+    font-family:Georgia,serif; font-style:italic; font-weight:400;
+    text-transform:none; color:#5d3ba5;
+  }
+  .body-text {
+    font-size:14px; line-height:1.55; color:#555555; margin-bottom:26px;
+  }
+  .input-wrap {
+    margin-bottom:14px;
+  }
+  .email-input {
+    width:100%; box-sizing:border-box; padding:14px 16px; font-size:15px;
+    border:1px solid #d8d8d8; border-radius:6px; font-family:inherit;
+    color:#111; outline:none; text-align:center;
+  }
+  .email-input:focus { border-color:#5d3ba5; }
+  .cta {
+    display:block; width:100%; box-sizing:border-box; padding:16px;
+    background:#e8345e; color:#ffffff; font-size:13px; font-weight:800;
+    letter-spacing:2px; text-transform:uppercase; border:none; border-radius:6px;
+    cursor:pointer; margin-bottom:18px;
+  }
+  .cta:hover { background:#d12952; }
+  .trust {
+    font-size:11px; color:#888888; line-height:1.5;
+  }
+  .perks {
+    display:flex; justify-content:center; gap:18px; margin-bottom:22px;
+    font-size:11px; color:#5d3ba5; font-weight:700; letter-spacing:0.5px;
+    text-transform:uppercase;
+  }
+  .perks span::before { content:"✓ "; }
+</style>
+</head>
+<body>
+
+<div class="backdrop">
+  <div class="popup">
+    <div class="close">×</div>
+
+    <div class="logo">BIYOMA<sup>®</sup></div>
+    <div class="logo-tag">ADVANCED NUTRITION</div>
+
+    <div class="badge">-15% pirmajam užsakymui</div>
+
+    <div class="headline">
+      Pradėk savo<br>
+      <em>BIYOMA rutiną</em>
+    </div>
+
+    <div class="body-text">
+      Prisijunk prie 33 000+ klientų ir gauk 15% nuolaidą pirmam papildų užsakymui.
+    </div>
+
+    <div class="perks">
+      <span>15% nuolaida</span>
+      <span>Nemokamas pristatymas nuo 50€</span>
+    </div>
+
+    <div class="input-wrap">
+      <input type="email" class="email-input" placeholder="Tavo el. paštas" />
+    </div>
+
+    <button class="cta">Aktyvuoti nuolaidą</button>
+
+    <div class="trust">
+      Be spam'o. Atsisakyti gali bet kada.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
