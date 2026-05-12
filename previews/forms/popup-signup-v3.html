@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BIYOMA signup popup v3</title>
+<style>
+  body { margin:0; padding:0; background:#f4f1f7; min-height:100vh; display:flex; align-items:center; justify-content:center; font-family:'Inter','Helvetica Neue',Arial,sans-serif; padding:20px; box-sizing:border-box;}
+  .popup {
+    background:#FFFFFF; max-width:960px; width:100%;
+    border-radius:8px; overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,0.18);
+    position:relative; display:flex; flex-wrap:wrap;
+  }
+  .close {
+    position:absolute; top:18px; right:22px; width:32px; height:32px;
+    border-radius:50%; background:#ffffff; border:1px solid #e8e8e8;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; font-size:18px; color:#888; z-index:2;
+  }
+  .left {
+    flex:1 1 50%; min-width:280px; background:#FFFFFF; padding:0;
+  }
+  .left img { display:block; width:100%; height:auto; object-fit:cover;}
+  .right {
+    flex:1 1 50%; min-width:280px; padding:48px 56px;
+    box-sizing:border-box; display:flex; flex-direction:column; justify-content:center;
+  }
+  .eyebrow {
+    font-size:11px; font-weight:600; letter-spacing:3px;
+    color:#5A5A5A; text-transform:uppercase; margin-bottom:18px;
+  }
+  .headline {
+    font-family:'Inter','Helvetica Neue',Arial,sans-serif;
+    font-size:30px; font-weight:700; line-height:1.2;
+    color:#1A1A1A; letter-spacing:-0.01em; margin:0 0 28px 0;
+  }
+  .benefits { margin:0 0 28px 0; padding:0; list-style:none; }
+  .benefits li {
+    display:flex; align-items:flex-start; gap:14px;
+    font-size:15px; line-height:1.55; color:#3A3A3A; margin-bottom:14px;
+  }
+  .benefits li::before {
+    content:""; flex-shrink:0; width:22px; height:22px; border-radius:50%;
+    background:#9bbf1d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E") center/14px no-repeat;
+    margin-top:1px;
+  }
+  .benefits b { color:#1A1A1A; font-weight:700; }
+  .form-row {
+    display:flex; gap:12px; margin-bottom:14px;
+  }
+  .email-input {
+    flex:1; padding:14px 18px; font-size:15px;
+    border:1px solid #d8d8d8; border-radius:4px; font-family:inherit;
+    color:#1A1A1A; outline:none; background:#FFFFFF;
+  }
+  .email-input::placeholder { color:#999; }
+  .email-input:focus { border-color:#9bbf1d; }
+  .cta {
+    padding:14px 28px; background:#9bbf1d; color:#FFFFFF;
+    font-size:13px; font-weight:800; letter-spacing:1.5px;
+    text-transform:uppercase; border:none; border-radius:4px;
+    cursor:pointer; white-space:nowrap;
+  }
+  .cta:hover { background:#86a418; }
+  .disclaimer {
+    font-size:11px; color:#888; line-height:1.5; margin-top:6px;
+  }
+
+  @media (max-width:768px) {
+    .left { flex-basis:100%; }
+    .right { padding:32px 24px; }
+    .headline { font-size:24px; }
+    .form-row { flex-direction:column; }
+    .cta { width:100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="popup">
+  <div class="close">×</div>
+  <div class="left">
+    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/forms/popup-hero-v3.jpg" alt="BIYOMA papildai">
+  </div>
+  <div class="right">
+    <div class="eyebrow">Rinkis geriau. Gyvenk pilniau.</div>
+    <h2 class="headline">Pradėkite BIYOMA® rutiną su <span style="color:#1A1A1A;">−10% nuolaida</span></h2>
+    <ul class="benefits">
+      <li>Prenumeruokite ir iškart gaukite <b>−10% kodą</b> pirmajam užsakymui</li>
+      <li>Pažangūs maisto papildai kasdieniam balansui</li>
+      <li>Be spamo - atsisakyti galima bet kada vienu paspaudimu</li>
+    </ul>
+    <div class="form-row">
+      <input type="email" class="email-input" placeholder="Jūsų el. paštas">
+      <button class="cta">Gauti −10%</button>
+    </div>
+    <div class="disclaimer">
+      Spausdami sutinkate gauti BIYOMA® rinkodaros pranešimus el. paštu. Atsisakyti galite bet kada. Maisto papildas nėra maisto pakaitalas; svarbu įvairi ir subalansuota mityba bei sveikas gyvenimo būdas.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
