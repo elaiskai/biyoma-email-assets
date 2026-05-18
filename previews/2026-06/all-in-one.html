@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIYOMA · Birželio 2026 · Visi 8 emails</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;background:#0A140A;color:#fff;min-height:100vh}
+
+  /* Sticky top nav */
+  .nav{
+    position:sticky;top:0;z-index:100;
+    background:#0A140A;border-bottom:1px solid #1F2F1F;
+    padding:18px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .nav .brand{
+    font-size:14px;font-weight:700;color:#9BBF1D;letter-spacing:0.16em;text-transform:uppercase;
+    margin-right:auto;
+  }
+  .nav .meta{font-size:11px;color:#888;letter-spacing:0.08em;text-transform:uppercase}
+  .nav .links{display:flex;gap:8px;flex-wrap:wrap}
+  .nav .links a{
+    display:inline-block;padding:8px 14px;border-radius:100px;
+    background:#1F2F1F;color:#EBEBEB;font-size:12px;font-weight:600;letter-spacing:0.04em;
+    text-decoration:none;transition:all 0.15s;
+  }
+  .nav .links a:hover,.nav .links a.active{background:#9BBF1D;color:#0A140A}
+  .nav .device-toggle{display:flex;gap:6px;margin-left:12px}
+  .nav .device-toggle button{
+    background:#1F2F1F;color:#EBEBEB;border:0;padding:8px 14px;font-size:11px;font-weight:600;
+    letter-spacing:0.04em;border-radius:100px;cursor:pointer;font-family:inherit;
+  }
+  .nav .device-toggle button.active{background:#9BBF1D;color:#0A140A}
+
+  /* Sections */
+  .section{padding:48px 24px;border-bottom:1px solid #1F2F1F;background:#0A140A}
+  .section-head{
+    max-width:1100px;margin:0 auto 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .section-head .id{font-size:32px;font-weight:800;color:#9BBF1D;letter-spacing:-0.02em}
+  .section-head .title{font-size:22px;font-weight:600;color:#EBEBEB;letter-spacing:-0.01em;flex:1;min-width:200px}
+  .section-head .pills{display:flex;gap:8px;flex-wrap:wrap}
+  .section-head .pills span{
+    display:inline-block;padding:5px 12px;border-radius:100px;
+    font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+  }
+  .pill-edu{background:rgba(155,191,29,0.18);color:#9BBF1D}
+  .pill-promo{background:rgba(233,79,55,0.18);color:#E94F37}
+  .pill-season{background:rgba(212,166,52,0.18);color:#D4A634}
+  .pill-date{background:#1F2F1F;color:#EBEBEB}
+
+  .frame-wrap{
+    background:#F7F7F7;border-radius:12px;overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+    max-width:1100px;margin:0 auto;
+  }
+  iframe{
+    display:block;border:0;width:100%;
+    transition:max-width 0.2s;background:#F7F7F7;
+  }
+  iframe.desktop{max-width:1100px;height:1800px}
+  iframe.mobile{max-width:375px;margin:0 auto;height:1800px}
+
+  /* Footer */
+  .foot{padding:48px 24px;text-align:center;background:#0A140A;color:#666;font-size:12px;line-height:1.7}
+  .foot a{color:#9BBF1D;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="brand">BIYOMA · Birželio 2026</div>
+  <div class="links">
+    <a href="#c1" class="navlink" data-id="c1">C1</a>
+    <a href="#c2" class="navlink" data-id="c2">C2</a>
+    <a href="#c3" class="navlink" data-id="c3">C3</a>
+    <a href="#c4" class="navlink" data-id="c4">C4</a>
+    <a href="#c5" class="navlink" data-id="c5">C5</a>
+    <a href="#c6" class="navlink" data-id="c6">C6</a>
+    <a href="#c7" class="navlink" data-id="c7">C7</a>
+    <a href="#c8" class="navlink" data-id="c8">C8</a>
+  </div>
+  <div class="device-toggle">
+    <button id="btn-desktop" class="active" onclick="setDevice('desktop')">Desktop</button>
+    <button id="btn-mobile" onclick="setDevice('mobile')">Mobile 375px</button>
+  </div>
+</div>
+
+<section class="section" id="c1">
+  <div class="section-head">
+    <span class="id">C1</span>
+    <span class="title">Trečia kava, o dar tik rytas?</span>
+    <div class="pills">
+      <span class="pill-date">06-02 antr 18:00</span>
+      <span class="pill-edu">Edukacinė</span>
+      <span class="pill-date">ALL · BRAIN PRO</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c1.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c2">
+  <div class="section-head">
+    <span class="id">C2</span>
+    <span class="title">Tėvo dienai — ALPHA PRO ritmas</span>
+    <div class="pills">
+      <span class="pill-date">06-04 ketv 19:00</span>
+      <span class="pill-edu">Edukacinė + soft</span>
+      <span class="pill-date">A + men 30-55</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c2.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c3">
+  <div class="section-head">
+    <span class="id">C3</span>
+    <span class="title">Trys paprasti vasaros rutinos žingsniai</span>
+    <div class="pills">
+      <span class="pill-date">06-09 antr 18:00</span>
+      <span class="pill-edu">Edukacinė</span>
+      <span class="pill-date">A · cross-katalogas</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c3.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c4">
+  <div class="section-head">
+    <span class="id">C4</span>
+    <span class="title">2 vnt. −20 %, 3 vnt. −30 % · Pakopinė pasiūla</span>
+    <div class="pills">
+      <span class="pill-date">06-11 ketv 19:00</span>
+      <span class="pill-promo">Promo · tiered</span>
+      <span class="pill-date">ALL · 3 bestsellers</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c4.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c5">
+  <div class="section-head">
+    <span class="id">C5</span>
+    <span class="title">Vasaros gynyba — SHROOM PRO + IMMUNITY MAX</span>
+    <div class="pills">
+      <span class="pill-date">06-16 antr 18:00</span>
+      <span class="pill-edu">Edukacinė</span>
+      <span class="pill-date">A + F</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c5.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c6">
+  <div class="section-head">
+    <span class="id">C6</span>
+    <span class="title">SLEEP MAX — kai vasaros vakarai šviesesni</span>
+    <div class="pills">
+      <span class="pill-date">06-18 ketv 19:00</span>
+      <span class="pill-edu">Edukacinė</span>
+      <span class="pill-date">A + D (no SLEEP)</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c6.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c7">
+  <div class="section-head">
+    <span class="id">C7</span>
+    <span class="title">Joninių žaluma — BIYOMA savaitė (JONINĖS15)</span>
+    <div class="pills">
+      <span class="pill-date">06-23 antr 18:00</span>
+      <span class="pill-season">Sezoninė</span>
+      <span class="pill-date">ALL · 3 bestsellers</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c7.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section class="section" id="c8">
+  <div class="section-head">
+    <span class="id">C8</span>
+    <span class="title">BRAIN PRO — koncentracija vasaros tempe</span>
+    <div class="pills">
+      <span class="pill-date">06-25 ketv 19:00</span>
+      <span class="pill-edu">Edukacinė</span>
+      <span class="pill-date">A2 + D2</span>
+    </div>
+  </div>
+  <div class="frame-wrap">
+    <iframe class="campaign desktop" src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/previews/2026-06/c8.html" loading="lazy"></iframe>
+  </div>
+</section>
+
+<div class="foot">
+  BIYOMA · Birželio 2026 plan'as · 8 kampanijos<br>
+  <a href="https://github.com/elaiskai/biyoma-email-assets/tree/main/previews/2026-06" target="_blank">github / previews/2026-06</a>
+</div>
+
+<script>
+  function setDevice(mode){
+    document.querySelectorAll('iframe.campaign').forEach(f=>{
+      f.classList.remove('desktop','mobile');
+      f.classList.add(mode);
+    });
+    document.getElementById('btn-desktop').classList.toggle('active', mode==='desktop');
+    document.getElementById('btn-mobile').classList.toggle('active', mode==='mobile');
+  }
+  // Active nav highlight
+  const links = document.querySelectorAll('.navlink');
+  const sections = document.querySelectorAll('.section');
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(e.isIntersecting){
+        const id = e.target.id;
+        links.forEach(l=>l.classList.toggle('active', l.dataset.id===id));
+      }
+    });
+  }, {threshold:0.3});
+  sections.forEach(s=>io.observe(s));
+</script>
+
+</body>
+</html>
