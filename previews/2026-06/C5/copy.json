@@ -1,0 +1,28 @@
+{
+  "subject_a": "Vasaros gynyba — dvi kryptys",
+  "subject_b": "Vasaros apkrova nedingsta",
+  "preheader_a": "SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.",
+  "preheader_b": "Kondicionieriai, kelionės ir klimato pokyčiai keičia kūno ritmą.",
+  "eyebrow": "Vasaros gynyba",
+  "headline": "Viena rutina, du skirtingi kampai",
+  "italic_accent": "Vasara lengvesnė, bet imuninė apkrova nedingsta.",
+  "intro": "Karštis, oro kondicionieriai, skrydžiai ir klimato pokyčiai keičia įprastą kūno ritmą. Todėl vasaros rutina gali turėti ramų gynybos sluoksnį — be skubėjimo ir be pažadų, kurių nereikia.",
+  "blocks": [
+    {
+      "label": "SHROOM PRO",
+      "title": "Grybų ekstraktų kryptis",
+      "text": "Formulės centre — 7 grybų ekstraktų kompleksas, įskaitant Lentinula edodes. Tai grybų kilmės rutinos sluoksnis dienoms, kai daugiau judėjimo, kitokio klimato ir mažiau įprasto ritmo."
+    },
+    {
+      "label": "IMMUNITY MAX",
+      "title": "Maistinių medžiagų pagrindas",
+      "text": "Čia kampas kitas — ne grybų ekstraktai, o maistinių medžiagų formulė kasdieniam imuninės rutinos pagrindui. Ji aktuali tada, kai vasara pilna kontrastų: šaltas oras patalpose, kelionės, miego ritmo poslinkiai."
+    }
+  ],
+  "offer_tiers": [],
+  "code_block": {},
+  "closing": "Vasaros rutina neturi būti sunki. SHROOM PRO ir IMMUNITY MAX gali būti du atskiri jos sluoksniai — vienas iš grybų ekstraktų krypties, kitas iš maistinių medžiagų krypties.",
+  "support_claim_line": "IMMUNITY MAX padeda palaikyti normalią imuninės sistemos veiklą.",
+  "cta_label": "Papildyti rutiną",
+  "ps_line": "P.S. BIYOMA formulės gaminamos ES, laikantis GMP, GHP ir HACCP principų."
+}
