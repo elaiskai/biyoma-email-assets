@@ -1,27 +1,27 @@
 {
   "subject_a": "2 vnt. –20%, 3 vnt. –30%",
-  "subject_b": "Rinkinys iki –30% iki 06-15",
-  "preheader_a": "BRAIN PRO, LIVER PRO ir SLEEP MAX — pakopinė pasiūla Jūsų rutinai.",
-  "preheader_b": "Perkant 2 vnt. — –20%, perkant 3 vnt. — –30%. Galioja iki 06-15 23:59.",
+  "subject_b": "Rinkinys iki –30%",
+  "preheader_a": "BRAIN PRO, LIVER PRO ir SLEEP MAX — derinkite pagal savo rutiną.",
+  "preheader_b": "Renkantis 2 vnt. — –20%, renkantis 3 vnt. — –30%.",
   "eyebrow": "Papildykite rinkinį",
   "headline": "2 vnt. –20%, 3 vnt. –30%",
   "italic_accent": "Iki –30% pigiau, kai rinkinį renkatės nuosekliai.",
-  "intro": "Kai kuriame ne vieną produktą, o sistemą — Jūsų kasdienei rutinai, kurią galima susidėlioti pagal poreikį. Šį kartą pakopinė logika paprasta: 2 vnt. –20%, 3 vnt. –30%.",
+  "intro": "BIYOMA produktus galite derinti tarpusavyje pagal savo kasdienę rutiną — rytui, dienai ar vakarui. Renkantis 2 vnt. iš asortimento, kaina sumažėja 20%. Renkantis 3 vnt. — net 30%. Pasirinkite tai, kas tinka Jūsų ritmui.",
   "blocks": [
     {
       "label": "Bestselleris",
       "title": "BRAIN PRO",
-      "text": "Kasdienės rutinos formulė su augaliniais ekstraktais ir maistinėmis medžiagomis. Patogu įtraukti į rinkinį, kai norisi turėti aiškų pasirinkimą dienai."
+      "text": "Kompleksinė formulė nervų sistemos, psichologinės funkcijos ir energijos apykaitos kasdieniam palaikymui. 60 kapsulių — 2 mėnesių kursas."
     },
     {
       "label": "Bestselleris",
       "title": "LIVER PRO",
-      "text": "Papildas Jūsų kepenų rutinai, sukurtas kaip atskira formulė nuosekliam vartojimui. Tinka derinti su kitais BIYOMA produktais pagal savo režimą."
+      "text": "Kompleksinė formulė normaliai kepenų funkcijai, virškinimo procesams ir medžiagų apykaitai palaikyti. 60 kapsulių — 2 mėnesių kursas."
     },
     {
       "label": "Bestselleris",
       "title": "SLEEP MAX",
-      "text": "Vakaro rutinos produktas, skirtas dienos pabaigos ritualui. Rinkinyje jis natūraliai papildo rytui ar dienai pasirinktus produktus."
+      "text": "Kompleksinė formulė normaliam miegui ir nervų sistemos veiklai palaikyti. 60 kapsulių — 2 mėnesių kursas."
     }
   ],
   "offer_tiers": [
@@ -30,8 +30,8 @@
     "3 vnt. –30%"
   ],
   "code_block": {},
-  "closing": "Pasiūla galioja iki 06-15 23:59. Pasirinkite 2 arba 3 vnt. iš pasiūlos ir nuolaida bus pritaikyta pagal pakopą.",
+  "closing": "",
   "support_claim_line": "",
   "cta_label": "Rinktis rinkinį",
-  "ps_line": "P.S. Rinkinyje galite derinti skirtingus šios pasiūlos produktus."
+  "ps_line": "P.S. Rinkinyje galite derinti skirtingus BIYOMA produktus pagal savo poreikius."
 }
