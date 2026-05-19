@@ -1,0 +1,33 @@
+{
+  "subject_a": "Trys žingsniai vasaros rutinai 🌿",
+  "subject_b": "Aiškesnis ritmas, kai diena ilgesnė",
+  "preheader": "Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.",
+  "eyebrow": "Vasaros ritmas",
+  "headline": "Trys atramos taškai dienai",
+  "italic_accent": "Rytas. Popietė. Vakaras — kai įprastas ritmas pasislenka.",
+  "intro": "Vasarą diena dažnai išsitempia. Kelionės, vėlesni vakarai ir daugiau šviesos lengvai perstumdo įprastus įpročius, todėl verta turėti kelis paprastus taškus, prie kurių galima grįžti.",
+  "blocks": [
+    {
+      "time": "Rytas",
+      "product": "BRAIN PRO",
+      "title": "Pradėti dieną aiškiau",
+      "text": "BRAIN PRO natūraliai dera prie ryto ritmo — šalia vandens, pusryčių ar pirmo darbo bloko. Tai kasdienis pasirinkimas tiems, kurie dienos pradžioje vertina tvarką ir protinį aiškumą."
+    },
+    {
+      "time": "Popietė",
+      "product": "SPIRULINA",
+      "title": "Žalias dienos vidurys",
+      "text": "SPIRULINA patogiai įsilieja į popietę, kai norisi paprastos žalios atramos be sudėtingo ritualo. Ji gali tapti Jūsų dienos vidurio įpročiu — su vandeniu, kokteiliu ar kitu įprastu pasirinkimu."
+    },
+    {
+      "time": "Vakaras",
+      "product": "SLEEP MAX",
+      "title": "Ramesnis perėjimas į vakarą",
+      "text": "SLEEP MAX savo vietą randa vakare, kai vasarą šviesu ilgiau ir diena natūraliai užsitęsia. Tai vakaro rutinos dalis tiems, kurie mėgsta aiškų perėjimą nuo dienos tempo prie poilsio laiko."
+    }
+  ],
+  "closing": "Vasarą nebūtina griežta dienotvarkė. Kartais pakanka trijų pastovių momentų, kad diena turėtų daugiau struktūros ir Jūsų įpročiai liktų lengvai atpažįstami.",
+  "cta_label": "Apžvelgti katalogą",
+  "trust_line": "BIYOMA formulės gaminamos ES, laikantis GMP, GHP ir HACCP kokybės standartų.",
+  "ps_line": "P.S. Rinkis geriau. Gyvenk pilniau."
+}
