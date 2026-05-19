@@ -1,0 +1,36 @@
+{
+  "subject_a": "Joninių žaluma — 15% BIYOMA",
+  "subject_b": "Joninių savaitė — kodas tik iki 06-25",
+  "preheader_a": "Kodas JONINĖS15: 15%, kai krepšelis nuo €40. Galioja 06-23–06-25.",
+  "preheader_b": "Iki 06-25 23:59 — 15% su kodu JONINĖS15, kai krepšelis nuo €40.",
+  "eyebrow": "Joninių žaluma",
+  "headline": "Joninių žaluma — BIYOMA savaitė",
+  "italic_accent": "Žaluma čia ne dekoracija — ji BIYOMA pradžia.",
+  "intro": "Birželis turi savo ritmą — daugiau šviesos, daugiau lauko.\nŠią savaitę BIYOMA žalią kryptį palydi ramus pasiūlymas.",
+  "blocks": [
+    {
+      "label": "Bestselleris",
+      "title": "BRAIN PRO",
+      "text": "Kasdienės rutinos formulė su augaliniais ekstraktais ir mikronutrientais."
+    },
+    {
+      "label": "Bestselleris",
+      "title": "LIVER PRO",
+      "text": "Augalinių ekstraktų ir maistinių medžiagų derinys Jūsų kasdieniam pasirinkimui."
+    },
+    {
+      "label": "Bestselleris",
+      "title": "SLEEP MAX",
+      "text": "Vakaro rutinai sukurta formulė, kai norisi aiškesnio dienos užbaigimo."
+    }
+  ],
+  "offer_tiers": [],
+  "code_block": {
+    "code": "JONINĖS15",
+    "terms": "15% · min. krepšelis €40 · galioja 06-23–06-25"
+  },
+  "closing": "Rinkitės ramiai — BIYOMA formulės pagamintos ES, su aiškiai įvardytomis sudedamosiomis dalimis.",
+  "support_claim_line": "",
+  "cta_label": "Pasinaudoti pasiūlymu",
+  "ps_line": "P.S. Kodas galioja tik birželio 23–25 d."
+}
