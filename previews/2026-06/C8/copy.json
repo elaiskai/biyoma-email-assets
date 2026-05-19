@@ -1,0 +1,28 @@
+{
+  "subject_a": "BRAIN PRO vasaros darbo ritmui",
+  "subject_b": "Kai iki atostogų dar reikia susikaupti",
+  "preheader_a": "Apie aiškios dienos rutiną, kai kalendorius dar pilnas.",
+  "preheader_b": "Ataskaitos, kelionės, paskutiniai darbai — galvai reikia tvarkos.",
+  "eyebrow": "Vasaros tempui",
+  "headline": "Koncentracija, kai diena dar nesulėtėjo",
+  "italic_accent": "Kai mintyse jau atostogos, o kalendoriuje — dar keli svarbūs punktai.",
+  "intro": "Birželio pabaigoje darbas dažnai tampa tankesnis. Ataskaitos, perdavimai, kelionių planai ir paskutiniai sprendimai prašo ne skubėjimo, o ramesnės, aiškiau sudėtos dienos.",
+  "blocks": [
+    {
+      "label": "Vasaros darbas",
+      "title": "Kai reikia užbaigti be chaoso",
+      "text": "Prieš atostogas dėmesį lengva išskaidyti į daug mažų užduočių. Tokiu metu verta supaprastinti ritmą: vienas prioritetas vienu metu, trumpesni sąrašai, mažiau foninio triukšmo."
+    },
+    {
+      "label": "BRAIN PRO",
+      "title": "Vieta kasdienėje rutinoje",
+      "text": "BRAIN PRO gali būti Jūsų ryto ar darbo dienos rutinos dalis. Formulėje — 18 veikliųjų medžiagų, parinktų šiuolaikiškam požiūriui į pažintinių funkcijų palaikymą. Tai ne poilsio, miego ar vandens pakaitalas, o apgalvotas papildymas kasdienai."
+    }
+  ],
+  "offer_tiers": [],
+  "code_block": {},
+  "closing": "Jei vasaros pabaigos darbai dar reikalauja susikaupimo, pradėkite nuo paprastos tvarkos dienoje. BRAIN PRO gali rasti vietą šalia šios rutinos.",
+  "support_claim_line": "Cinkas padeda palaikyti normalią pažinimo funkciją.",
+  "cta_label": "Atrasti BRAIN PRO",
+  "ps_line": "P.S. Ramus tempas dažnai prasideda ne nuo ilgesnio sąrašo, o nuo aiškesnio pirmo žingsnio."
+}
