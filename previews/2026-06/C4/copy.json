@@ -1,0 +1,37 @@
+{
+  "subject_a": "2 vnt. –20%, 3 vnt. –30%",
+  "subject_b": "Rinkinys iki –30% iki 06-15",
+  "preheader_a": "BRAIN PRO, LIVER PRO ir SLEEP MAX — pakopinė pasiūla Jūsų rutinai.",
+  "preheader_b": "Perkant 2 vnt. — –20%, perkant 3 vnt. — –30%. Galioja iki 06-15 23:59.",
+  "eyebrow": "Papildykite rinkinį",
+  "headline": "2 vnt. –20%, 3 vnt. –30%",
+  "italic_accent": "Iki –30% pigiau, kai rinkinį renkatės nuosekliai.",
+  "intro": "Kai kuriame ne vieną produktą, o sistemą — Jūsų kasdienei rutinai, kurią galima susidėlioti pagal poreikį. Šį kartą pakopinė logika paprasta: 2 vnt. –20%, 3 vnt. –30%.",
+  "blocks": [
+    {
+      "label": "Bestselleris",
+      "title": "BRAIN PRO",
+      "text": "Kasdienės rutinos formulė su augaliniais ekstraktais ir maistinėmis medžiagomis. Patogu įtraukti į rinkinį, kai norisi turėti aiškų pasirinkimą dienai."
+    },
+    {
+      "label": "Bestselleris",
+      "title": "LIVER PRO",
+      "text": "Papildas Jūsų kepenų rutinai, sukurtas kaip atskira formulė nuosekliam vartojimui. Tinka derinti su kitais BIYOMA produktais pagal savo režimą."
+    },
+    {
+      "label": "Bestselleris",
+      "title": "SLEEP MAX",
+      "text": "Vakaro rutinos produktas, skirtas dienos pabaigos ritualui. Rinkinyje jis natūraliai papildo rytui ar dienai pasirinktus produktus."
+    }
+  ],
+  "offer_tiers": [
+    "1 vnt.",
+    "2 vnt. –20%",
+    "3 vnt. –30%"
+  ],
+  "code_block": {},
+  "closing": "Pasiūla galioja iki 06-15 23:59. Pasirinkite 2 arba 3 vnt. iš pasiūlos ir nuolaida bus pritaikyta pagal pakopą.",
+  "support_claim_line": "",
+  "cta_label": "Rinktis rinkinį",
+  "ps_line": "P.S. Rinkinyje galite derinti skirtingus šios pasiūlos produktus."
+}
