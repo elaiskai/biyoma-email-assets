@@ -15,14 +15,31 @@
   body{margin:0!important;padding:0!important;background:#F7F7F7;font-family:'Montserrat','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;color:#0A140A;}
   a{text-decoration:none;}
   @media screen and (max-width:600px){
-    .container{width:100%!important;}
-    .px{padding-left:22px!important;padding-right:22px!important;}
-    .stack{display:block!important;width:100%!important;}
+    .container{width:100%!important;max-width:100%!important;}
+    .px{padding-left:16px!important;padding-right:16px!important;}
+    .stack{display:block!important;width:100%!important;box-sizing:border-box!important;}
+    .stack.imgcol{padding:24px 18px 8px!important;text-align:center!important;}
+    .stack.txtcol{padding:8px 22px 22px!important;text-align:center!important;}
     .center-m{text-align:center!important;}
-    .product-img{margin:0 auto!important;}
-    .h1{font-size:31px!important;line-height:36px!important;}
-    .h2{font-size:25px!important;line-height:30px!important;}
-    .card-pad{padding:24px!important;}
+    .product-img,.card-img{margin:0 auto!important;max-width:70%!important;}
+    .h1{font-size:26px!important;line-height:32px!important;}
+    .h2{font-size:21px!important;line-height:28px!important;}
+    .card-pad{padding:22px!important;}
+    h3{font-size:18px!important;line-height:24px!important;}
+    a.cta-btn{display:block!important;padding:14px 18px!important;}
+    .card-btn{display:inline-block!important;padding:12px 22px!important;font-size:13px!important;}
+    /* Price ladder — 3-wide stays but ultra-tight on mobile so blocks stay even */
+    td.price-tier{padding:4px 2px!important;width:33.33%!important;vertical-align:top!important;}
+    td.price-tier > div{padding:12px 4px!important;border-radius:10px!important;}
+    td.price-tier p{margin:0!important;}
+    td.price-tier p:first-child{font-size:11px!important;line-height:14px!important;font-weight:600!important;}
+    td.price-tier p:last-child{font-size:18px!important;line-height:22px!important;font-weight:700!important;margin-top:2px!important;}
+    /* Card-img inside <a> wrappers — keep aspect, less margin */
+    a > img{display:block!important;margin:0 auto!important;}
+    /* Body text consistent */
+    p{font-size:14px!important;line-height:22px!important;}
+    /* Disable filter/shadow effects on narrow */
+    img{filter:none!important;}
   }
 </style>
 </head>
@@ -46,12 +63,12 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
   </td></tr>
   <!-- ▸ LOGO HEADER (LOCKED canonical) -->
   <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:40px 40px 8px;background:#FFFFFF;">
-    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/biyoma-logo-black.png" alt="BIYOMA Advanced Nutrition" width="172" style="display:block;margin:0 auto;width:172px;height:auto;max-width:172px;">
+    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@b1285a0/biyoma-logo-black.png" alt="BIYOMA Advanced Nutrition" width="172" height="44" style="display:block;margin:0 auto;width:172px;height:auto;max-width:172px;">
   </td></tr>
 
   <!-- ▸ GREETING (LOCKED canonical) -->
   <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 40px 8px;background:#FFFFFF;">
-    <span class="serif" style="font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;font-style:italic;font-size:18px;font-weight:500;color:#2A2A2A;letter-spacing:-0.01em;">Sveiki, {{firstName | default: 'drauge'}}.</span>
+    <span class="serif" style="font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;font-style:italic;font-size:18px;font-weight:500;color:#2A2A2A;letter-spacing:-0.01em;">Sveiki, [[contact.first_name]].</span>
   </td></tr>
 
   <!-- ▸ RATING ROW (LOCKED canonical) -->
@@ -78,21 +95,21 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
         <tr>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-brain-pro.png" width="150" alt="BIYOMA BRAIN PRO" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/brain-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-brain-pro" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-brain-pro.png" width="150" alt="BIYOMA BRAIN PRO" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">BRAIN PRO</p>
               <a href="https://www.biyoma.lt/produktas/brain-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
           </td>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-sleep.png" width="150" alt="BIYOMA SLEEP MAX" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/sleep/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-sleep" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-sleep.png" width="150" alt="BIYOMA SLEEP MAX" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">SLEEP MAX</p>
               <a href="https://www.biyoma.lt/produktas/sleep/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
           </td>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-immunity-max.png" width="150" alt="BIYOMA IMMUNITY MAX" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/immunity-max/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-immunity-max" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-immunity-max.png" width="150" alt="BIYOMA IMMUNITY MAX" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">IMMUNITY MAX</p>
               <a href="https://www.biyoma.lt/produktas/immunity-max/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
@@ -101,21 +118,21 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
         <tr>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-liver-pro.png" width="150" alt="BIYOMA LIVER PRO" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/liver-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-liver-pro" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-liver-pro.png" width="150" alt="BIYOMA LIVER PRO" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">LIVER PRO</p>
               <a href="https://www.biyoma.lt/produktas/liver-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
           </td>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-spirulina.png" width="150" alt="BIYOMA SPIRULINA" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/spirulina/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-spirulina" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-spirulina.png" width="150" alt="BIYOMA SPIRULINA" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">SPIRULINA</p>
               <a href="https://www.biyoma.lt/produktas/spirulina/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
           </td>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-shroom-pro.png" width="150" alt="BIYOMA SHROOM PRO" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/shroom-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-shroom-pro" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-shroom-pro.png" width="150" alt="BIYOMA SHROOM PRO" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">SHROOM PRO</p>
               <a href="https://www.biyoma.lt/produktas/shroom-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
@@ -124,21 +141,21 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
         <tr>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-digest.png" width="150" alt="BIYOMA DIGEST PRO" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/digest-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-digest-pro" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-digest.png" width="150" alt="BIYOMA DIGEST PRO" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">DIGEST PRO</p>
               <a href="https://www.biyoma.lt/produktas/digest-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
           </td>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-beauty.png" width="150" alt="BIYOMA BEAUTY MAX" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/beauty-max/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-beauty-max" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-beauty.png" width="150" alt="BIYOMA BEAUTY MAX" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">BEAUTY MAX</p>
               <a href="https://www.biyoma.lt/produktas/beauty-max/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
           </td>
           <td class="stack" width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:7px;vertical-align:top;">
             <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:16px;padding:18px 14px;text-align:center;height:240px;">
-              <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-alpha-pro.png" width="150" alt="BIYOMA ALPHA PRO" style="width:150px;height:150px;display:block;margin:0 auto 10px;object-fit:contain;">
+              <a href="https://www.biyoma.lt/produktas/alpha-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-alpha-pro" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c7-box-alpha-pro.png" width="150" alt="BIYOMA ALPHA PRO" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a>
               <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 12px;font-size:15px;font-weight:700;color:#0A140A;">ALPHA PRO</p>
               <a href="https://www.biyoma.lt/produktas/alpha-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-card" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:24px;padding:10px 18px;font-size:12px;font-weight:700;">Rinktis &rarr;</a>
             </div>
@@ -148,7 +165,7 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
     </td></tr><tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:28px 34px;background:#F4F8E6;">
       <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:15px;line-height:24px;color:#0A140A;text-align:center;">Rinkdamiesi BIYOMA® papildą savo dienai, atkreipkite dėmesį į formulės paskirtį ir sudėtį. BIYOMA® formulės pagamintos ES, o jų sudedamosios dalys aiškiai įvardytos, todėl lengviau pasirinkti pagal savo ritmą: rytui, vakarui ar kasdieniam palaikymui.</p></td></tr><tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:38px 38px 34px;background:#ffffff;text-align:center;">
       <h2 class="h2" style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 18px;font-size:23px;line-height:30px;color:#0A140A;font-weight:700;letter-spacing:-0.02em;">Joninių savaitės pasiūlymas</h2>
-      <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-cta" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:30px;padding:15px 34px;font-size:15px;font-weight:700;">Pasinaudoti pasiūlymu →</a>
+      <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c7-cta" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;white-space:nowrap;color:#ffffff;border-radius:30px;padding:15px 34px;font-size:15px;font-weight:700;">Pasinaudoti pasiūlymu →</a>
     </td></tr>
   
         <!-- TESTIMONIAL -->
@@ -201,7 +218,7 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
         </tr>
       </table>
       <div style="font-family:'Montserrat',Arial,sans-serif; text-align:center;margin-top:24px;">
-        <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/badges/email-footer-badges.png" width="430" alt="VEGAN GMP GHP HACCP" style="width:430px;max-width:100%;height:auto;margin:0 auto;display:block;">
+        <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@b1285a0/badges/email-footer-badges.png" width="430" alt="VEGAN GMP GHP HACCP" style="width:430px;max-width:100%;height:auto;margin:0 auto;display:block;">
       </div>
     </td>
   </tr>
@@ -241,7 +258,7 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
             </p>
 
             <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px 0; text-align:center; font-size:11px; line-height:16px; color:#888888;">
-              Jeigu nebenorite gauti mūsų laiškų, galite <a href="{{ omnisend.unsubscribeUrl }}" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">atsisakyti prenumeratos</a> arba susisiekti su mumis dėl kontaktų pašalinimo.
+              Jeigu nebenorite gauti mūsų laiškų, galite <a href="[[unsubscribe_link]]" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">atsisakyti prenumeratos</a> arba susisiekti su mumis dėl kontaktų pašalinimo.
             </p>
 
             <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px 0; text-align:center; font-size:11px; line-height:16px; color:#888888;">
@@ -249,7 +266,7 @@ Joninių savaitės pasiūlymas su kodu JONINES15 galioja nuo birželio 23 d. iki
             </p>
 
             <p style="font-family:'Montserrat',Arial,sans-serif; margin:0; text-align:center; font-size:12px;">
-              <a href="{{ omnisend.unsubscribeUrl }}" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">Atsisakyti prenumeratos</a>
+              <a href="[[unsubscribe_link]]" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">Atsisakyti prenumeratos</a>
               &nbsp;·&nbsp;
               <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign={{ campaign.name }}&utm_content=footer_home" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">biyoma.lt</a>
               &nbsp;·&nbsp;

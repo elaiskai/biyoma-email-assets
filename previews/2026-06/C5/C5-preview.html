@@ -15,13 +15,31 @@
   body{margin:0!important;padding:0!important;background:#F7F7F7;font-family:'Montserrat','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;color:#0A140A;}
   a{text-decoration:none;}
   @media screen and (max-width:600px){
-    .container{width:100%!important;}
-    .px{padding-left:22px!important;padding-right:22px!important;}
-    .stack{display:block!important;width:100%!important;}
+    .container{width:100%!important;max-width:100%!important;}
+    .px{padding-left:16px!important;padding-right:16px!important;}
+    .stack{display:block!important;width:100%!important;box-sizing:border-box!important;}
+    .stack.imgcol{padding:24px 18px 8px!important;text-align:center!important;}
+    .stack.txtcol{padding:8px 22px 22px!important;text-align:center!important;}
     .center-m{text-align:center!important;}
-    .product-img{margin:0 auto!important;}
-    .h1{font-size:31px!important;line-height:36px!important;}
-    .h2{font-size:25px!important;line-height:30px!important;}
+    .product-img,.card-img{margin:0 auto!important;max-width:70%!important;}
+    .h1{font-size:26px!important;line-height:32px!important;}
+    .h2{font-size:21px!important;line-height:28px!important;}
+    .card-pad{padding:22px!important;}
+    h3{font-size:18px!important;line-height:24px!important;}
+    a.cta-btn{display:block!important;padding:14px 18px!important;}
+    .card-btn{display:inline-block!important;padding:12px 22px!important;font-size:13px!important;}
+    /* Price ladder — 3-wide stays but ultra-tight on mobile so blocks stay even */
+    td.price-tier{padding:4px 2px!important;width:33.33%!important;vertical-align:top!important;}
+    td.price-tier > div{padding:12px 4px!important;border-radius:10px!important;}
+    td.price-tier p{margin:0!important;}
+    td.price-tier p:first-child{font-size:11px!important;line-height:14px!important;font-weight:600!important;}
+    td.price-tier p:last-child{font-size:18px!important;line-height:22px!important;font-weight:700!important;margin-top:2px!important;}
+    /* Card-img inside <a> wrappers — keep aspect, less margin */
+    a > img{display:block!important;margin:0 auto!important;}
+    /* Body text consistent */
+    p{font-size:14px!important;line-height:22px!important;}
+    /* Disable filter/shadow effects on narrow */
+    img{filter:none!important;}
   }
 </style>
 </head>
@@ -46,12 +64,12 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
 
   <!-- ▸ LOGO HEADER (LOCKED canonical) -->
   <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:40px 40px 8px;background:#FFFFFF;">
-    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/biyoma-logo-black.png" alt="BIYOMA Advanced Nutrition" width="172" style="display:block;margin:0 auto;width:172px;height:auto;max-width:172px;">
+    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@b1285a0/biyoma-logo-black.png" alt="BIYOMA Advanced Nutrition" width="172" height="44" style="display:block;margin:0 auto;width:172px;height:auto;max-width:172px;">
   </td></tr>
 
   <!-- ▸ GREETING (LOCKED canonical) -->
   <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 40px 8px;background:#FFFFFF;">
-    <span style="font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;font-style:italic;font-size:18px;font-weight:500;color:#2A2A2A;letter-spacing:-0.01em;">Sveiki, {{firstName | default: 'drauge'}}.</span>
+    <span style="font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;font-style:italic;font-size:18px;font-weight:500;color:#2A2A2A;letter-spacing:-0.01em;">Sveiki, [[contact.first_name]].</span>
   </td></tr>
 
   <!-- ▸ RATING ROW (LOCKED canonical) -->
@@ -79,7 +97,7 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
   <!-- ▸ SHROOM PRO CARD -->
   <tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:10px 34px;background:#ffffff;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; border:1px solid #EBEBEB;border-radius:16px;overflow:hidden;background:#ffffff;"><tr>
-      <td class="stack" width="38%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 12px;background:linear-gradient(160deg,#F4F8E6,#FAFBF1);"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c5-shroom-tr.png" width="150" alt="BIYOMA SHROOM PRO" style="width:150px;height:auto;margin:0 auto;filter:drop-shadow(0 14px 24px rgba(10,20,10,0.28));"></td>
+      <td class="stack" width="38%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 12px;background:linear-gradient(160deg,#F4F8E6,#FAFBF1);"><a href="https://www.biyoma.lt/produktas/shroom-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c5-shroom-pro" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c5-shroom-tr.png" width="150" alt="BIYOMA SHROOM PRO" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a></td>
       <td class="stack" width="62%" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 30px;">
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 5px;font-size:12px;font-weight:700;color:#9BBF1D;text-transform:uppercase;">SHROOM PRO</p>
         <h3 style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 9px;font-size:20px;line-height:26px;color:#0A140A;font-weight:700;">Grybų ekstraktų kryptis</h3>
@@ -91,7 +109,7 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
   <!-- ▸ IMMUNITY MAX CARD -->
   <tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:10px 34px;background:#FAFBF1;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; border:1px solid #EBEBEB;border-radius:16px;overflow:hidden;background:#ffffff;"><tr>
-      <td class="stack" width="38%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 12px;background:linear-gradient(160deg,#F4F8E6,#FAFBF1);"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c5-immunity-tr.png" width="150" alt="BIYOMA IMMUNITY MAX" style="width:150px;height:auto;margin:0 auto;filter:drop-shadow(0 14px 24px rgba(10,20,10,0.28));"></td>
+      <td class="stack" width="38%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 12px;background:linear-gradient(160deg,#F4F8E6,#FAFBF1);"><a href="https://www.biyoma.lt/produktas/immunity-max/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c5-immunity-max" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c5-immunity-tr.png" width="150" alt="BIYOMA IMMUNITY MAX" border="0" style="width:150px;max-width:100%;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a></td>
       <td class="stack" width="62%" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 30px;">
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 5px;font-size:12px;font-weight:700;color:#9BBF1D;text-transform:uppercase;">IMMUNITY MAX</p>
         <h3 style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 9px;font-size:20px;line-height:26px;color:#0A140A;font-weight:700;">Maistinių medžiagų šaltinis</h3>
@@ -109,15 +127,15 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
   <tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:6px 30px 26px;background:#F4F8E6;text-align:center;">
     <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px;font-size:12px;font-weight:700;color:#9BBF1D;text-transform:uppercase;letter-spacing:0.04em;">Kaina už vienetą</p>
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif;"><tr>
-      <td width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;vertical-align:top;">
+      <td class="price-tier" width="33.33%" style="font-family:\'Montserrat\',Arial,sans-serif; padding:6px;vertical-align:top;">
         <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #ECEFD9;border-radius:12px;padding:16px 8px;text-align:center;">
           <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 4px;font-size:13px;font-weight:600;color:#2A2A2A;">1 vnt.</p>
           <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:20px;font-weight:700;color:#0A140A;">-20%</p></div></td>
-      <td width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;vertical-align:top;">
+      <td class="price-tier" width="33.33%" style="font-family:\'Montserrat\',Arial,sans-serif; padding:6px;vertical-align:top;">
         <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #ECEFD9;border-radius:12px;padding:16px 8px;text-align:center;">
           <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 4px;font-size:13px;font-weight:600;color:#2A2A2A;">2 vnt.</p>
           <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:20px;font-weight:700;color:#5C7A0D;">-30%</p></div></td>
-      <td width="33.33%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;vertical-align:top;">
+      <td class="price-tier" width="33.33%" style="font-family:\'Montserrat\',Arial,sans-serif; padding:6px;vertical-align:top;">
         <div style="font-family:'Montserrat',Arial,sans-serif; background:#9BBF1D;border:1px solid #9BBF1D;border-radius:12px;padding:16px 8px;text-align:center;">
           <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 4px;font-size:13px;font-weight:600;color:#ffffff;">3 vnt.</p>
           <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:20px;font-weight:700;color:#ffffff;">-40%</p></div></td>
@@ -128,7 +146,7 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
   <!-- ▸ CTA -->
   <tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:34px 38px 32px;background:#ffffff;text-align:center;">
     <h2 class="h2" style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 18px;font-size:23px;line-height:30px;color:#0A140A;font-weight:700;letter-spacing:-0.02em;">Du papildai, viena rutina</h2>
-    <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c5-cta" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:30px;padding:15px 34px;font-size:15px;font-weight:700;">Papildyti rutiną &rarr;</a>
+    <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c5-cta" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;white-space:nowrap;color:#ffffff;border-radius:30px;padding:15px 34px;font-size:15px;font-weight:700;">Papildyti rutiną &rarr;</a>
   </td></tr>
 
   <!-- ▸ TESTIMONIAL -->
@@ -152,36 +170,44 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
       <h2 class="h2" style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 18px;text-align:center;color:#0A140A;font-size:27px;line-height:32px;font-weight:700;letter-spacing:-.03em;">Kodėl BIYOMA?</h2>
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif;">
         <tr>
-          <td class="stack" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:8px;">
-            <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;padding:18px;border:1px solid #EBEBEB;min-height:96px;">
-              <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:5px;">Ne tik graži pakuotė</strong>
-              <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">Viduje — aktyvūs ingredientai, aiški sudėtis ir kasdienė vertė.</span>
-            </div>
+          <td class="stack" valign="top" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;border:1px solid #EBEBEB;">
+              <tr><td style="font-family:'Montserrat',Arial,sans-serif; padding:18px;height:120px;vertical-align:top;background:#ffffff;border-radius:16px;">
+                <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:6px;font-family:'Montserrat',Arial,sans-serif;">Ne tik graži pakuotė</strong>
+                <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">Viduje — aktyvūs ingredientai, aiški sudėtis ir kasdienė vertė.</span>
+              </td></tr>
+            </table>
           </td>
-          <td class="stack" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:8px;">
-            <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;padding:18px;border:1px solid #EBEBEB;min-height:96px;">
-              <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:5px;">Aukštos kokybės žaliavos</strong>
-              <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">Atrinktos žaliavos ir premium kokybės standartas.</span>
-            </div>
+          <td class="stack" valign="top" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;border:1px solid #EBEBEB;">
+              <tr><td style="font-family:'Montserrat',Arial,sans-serif; padding:18px;height:120px;vertical-align:top;background:#ffffff;border-radius:16px;">
+                <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:6px;font-family:'Montserrat',Arial,sans-serif;">Aukštos kokybės žaliavos</strong>
+                <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">Atrinktos žaliavos ir premium kokybės standartas.</span>
+              </td></tr>
+            </table>
           </td>
         </tr>
         <tr>
-          <td class="stack" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:8px;">
-            <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;padding:18px;border:1px solid #EBEBEB;min-height:96px;">
-              <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:5px;">Tinka kasdienai</strong>
-              <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">60 kapsulių — patogiam 2 mėn. kursui kasdienai.</span>
-            </div>
+          <td class="stack" valign="top" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;border:1px solid #EBEBEB;">
+              <tr><td style="font-family:'Montserrat',Arial,sans-serif; padding:18px;height:120px;vertical-align:top;background:#ffffff;border-radius:16px;">
+                <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:6px;font-family:'Montserrat',Arial,sans-serif;">Tinka kasdienai</strong>
+                <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">60 kapsulių — patogiam 2 mėn. kursui kasdienai.</span>
+              </td></tr>
+            </table>
           </td>
-          <td class="stack" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:8px;">
-            <div style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;padding:18px;border:1px solid #EBEBEB;min-height:96px;">
-              <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:5px;">Pagaminta ES</strong>
-              <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">Pagaminta Europos Sąjungoje, laikantis kokybės reikalavimų.</span>
-            </div>
+          <td class="stack" valign="top" width="50%" style="font-family:'Montserrat',Arial,sans-serif; padding:6px;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border-radius:16px;border:1px solid #EBEBEB;">
+              <tr><td style="font-family:'Montserrat',Arial,sans-serif; padding:18px;height:120px;vertical-align:top;background:#ffffff;border-radius:16px;">
+                <strong style="display:block;color:#0A140A;font-size:14px;line-height:18px;margin-bottom:6px;font-family:'Montserrat',Arial,sans-serif;">Pagaminta ES</strong>
+                <span style="font-family:'Montserrat',Arial,sans-serif; color:#2A2A2A;font-size:13px;line-height:20px;">Pagaminta Europos Sąjungoje, laikantis kokybės reikalavimų.</span>
+              </td></tr>
+            </table>
           </td>
         </tr>
       </table>
       <div style="font-family:'Montserrat',Arial,sans-serif; text-align:center;margin-top:24px;">
-        <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/badges/email-footer-badges.png" width="430" alt="VEGAN GMP GHP HACCP" style="width:430px;max-width:100%;height:auto;margin:0 auto;display:block;">
+        <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@b1285a0/badges/email-footer-badges.png" width="430" alt="VEGAN GMP GHP HACCP" style="width:430px;max-width:100%;height:auto;margin:0 auto;display:block;">
       </div>
     </td>
   </tr>
@@ -220,7 +246,7 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
       </p>
 
       <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px 0; text-align:center; font-size:11px; line-height:16px; color:#888888;">
-        Jeigu nebenorite gauti mūsų laiškų, galite <a href="{{ omnisend.unsubscribeUrl }}" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">atsisakyti prenumeratos</a> arba susisiekti su mumis dėl kontaktų pašalinimo.
+        Jeigu nebenorite gauti mūsų laiškų, galite <a href="[[unsubscribe_link]]" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">atsisakyti prenumeratos</a> arba susisiekti su mumis dėl kontaktų pašalinimo.
       </p>
 
       <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px 0; text-align:center; font-size:11px; line-height:16px; color:#888888;">
@@ -228,7 +254,7 @@ SHROOM PRO ir IMMUNITY MAX — skirtingi rutinos sluoksniai vasarai.
       </p>
 
       <p style="font-family:'Montserrat',Arial,sans-serif; margin:0; text-align:center; font-size:12px;">
-        <a href="{{ omnisend.unsubscribeUrl }}" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">Atsisakyti prenumeratos</a>
+        <a href="[[unsubscribe_link]]" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">Atsisakyti prenumeratos</a>
         &nbsp;·&nbsp;
         <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign={{ campaign.name }}&utm_content=footer_home" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">biyoma.lt</a>
         &nbsp;·&nbsp;

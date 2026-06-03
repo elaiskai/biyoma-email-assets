@@ -15,14 +15,31 @@
   body{margin:0!important;padding:0!important;background:#F7F7F7;font-family:'Montserrat','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;color:#0A140A;}
   a{text-decoration:none;}
   @media screen and (max-width:600px){
-    .container{width:100%!important;}
-    .px{padding-left:22px!important;padding-right:22px!important;}
-    .stack{display:block!important;width:100%!important;}
+    .container{width:100%!important;max-width:100%!important;}
+    .px{padding-left:16px!important;padding-right:16px!important;}
+    .stack{display:block!important;width:100%!important;box-sizing:border-box!important;}
+    .stack.imgcol{padding:24px 18px 8px!important;text-align:center!important;}
+    .stack.txtcol{padding:8px 22px 22px!important;text-align:center!important;}
     .center-m{text-align:center!important;}
-    .product-img{margin:0 auto!important;}
-    .h1{font-size:31px!important;line-height:36px!important;}
-    .h2{font-size:25px!important;line-height:30px!important;}
-    .card-pad{padding:24px!important;}
+    .product-img,.card-img{margin:0 auto!important;max-width:70%!important;}
+    .h1{font-size:26px!important;line-height:32px!important;}
+    .h2{font-size:21px!important;line-height:28px!important;}
+    .card-pad{padding:22px!important;}
+    h3{font-size:18px!important;line-height:24px!important;}
+    a.cta-btn{display:block!important;padding:14px 18px!important;}
+    .card-btn{display:inline-block!important;padding:12px 22px!important;font-size:13px!important;}
+    /* Price ladder — 3-wide stays but ultra-tight on mobile so blocks stay even */
+    td.price-tier{padding:4px 2px!important;width:33.33%!important;vertical-align:top!important;}
+    td.price-tier > div{padding:12px 4px!important;border-radius:10px!important;}
+    td.price-tier p{margin:0!important;}
+    td.price-tier p:first-child{font-size:11px!important;line-height:14px!important;font-weight:600!important;}
+    td.price-tier p:last-child{font-size:18px!important;line-height:22px!important;font-weight:700!important;margin-top:2px!important;}
+    /* Card-img inside <a> wrappers — keep aspect, less margin */
+    a > img{display:block!important;margin:0 auto!important;}
+    /* Body text consistent */
+    p{font-size:14px!important;line-height:22px!important;}
+    /* Disable filter/shadow effects on narrow */
+    img{filter:none!important;}
   }
 </style>
 </head>
@@ -47,12 +64,12 @@ Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.
 
   <!-- ▸ LOGO HEADER (LOCKED canonical) -->
   <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:40px 40px 8px;background:#FFFFFF;">
-    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/biyoma-logo-black.png" alt="BIYOMA Advanced Nutrition" width="172" style="display:block;margin:0 auto;width:172px;height:auto;max-width:172px;">
+    <img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@b1285a0/biyoma-logo-black.png" alt="BIYOMA Advanced Nutrition" width="172" height="44" style="display:block;margin:0 auto;width:172px;height:auto;max-width:172px;">
   </td></tr>
 
   <!-- ▸ GREETING (LOCKED canonical) -->
   <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:24px 40px 8px;background:#FFFFFF;">
-    <span class="serif" style="font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;font-style:italic;font-size:18px;font-weight:500;color:#2A2A2A;letter-spacing:-0.01em;">Sveiki, {{firstName | default: 'drauge'}}.</span>
+    <span class="serif" style="font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;font-style:italic;font-size:18px;font-weight:500;color:#2A2A2A;letter-spacing:-0.01em;">Sveiki, [[contact.first_name]].</span>
   </td></tr>
 
   <!-- ▸ RATING ROW (LOCKED canonical) -->
@@ -72,7 +89,7 @@ Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.
         <div style="font-family:'Montserrat',Arial,sans-serif; width:46px;height:3px;background:#9BBF1D;border-radius:3px;margin:0 auto 18px;"></div>
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:15px;line-height:24px;color:#2A2A2A;text-align:left;">Vasarą diena dažnai išsitempia. Kelionės, vėlesni vakarai ir daugiau šviesos lengvai perstumdo įprastus įpročius, todėl verta turėti kelis paprastus taškus, prie kurių galima grįžti.</p></td></tr>
       <tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:14px 30px;background:#ffffff;">
-      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(10,20,10,0.06);"><tr><td class="stack imgcol" width="40%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 14px;background:linear-gradient(160deg,#F4F8E6 0%,#FAFBF1 100%);"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c3-p-brain.png" width="178" alt="BIYOMA BRAIN PRO" style="width:178px;max-width:178px;height:auto;margin:0 auto;filter:drop-shadow(0 16px 26px rgba(10,20,10,0.30));"></td><td class="stack txtcol" width="60%" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:30px 32px;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(10,20,10,0.06);"><tr><td class="stack imgcol" width="40%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 14px;background:#F4F8E6;background:linear-gradient(160deg,#F4F8E6 0%,#FAFBF1 100%);"><a href="https://www.biyoma.lt/produktas/brain-pro/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-brain" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c3-p-brain.png" width="178" alt="BIYOMA BRAIN PRO" border="0" style="width:178px;max-width:178px;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a></td><td class="stack txtcol" width="60%" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:30px 32px;">
         <span style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:100px;padding:5px 14px;font-size:11px;font-weight:700;text-transform:uppercase;">Rytas</span>
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:15px 0 4px;font-size:13px;color:#5C7A0D;font-weight:700;text-transform:uppercase;">BRAIN PRO</p>
         <h3 style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 10px;font-size:21px;line-height:27px;color:#0A140A;font-weight:700;letter-spacing:-0.02em;">Pradėti dieną aiškiau</h3>
@@ -83,8 +100,8 @@ Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:15px 0 4px;font-size:13px;color:#5C7A0D;font-weight:700;text-transform:uppercase;">SPIRULINA</p>
         <h3 style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 10px;font-size:21px;line-height:27px;color:#0A140A;font-weight:700;letter-spacing:-0.02em;">Žalias dienos vidurys</h3>
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 16px;font-size:14.5px;line-height:23px;color:#2A2A2A;">SPIRULINA patogiai įsilieja į popietę, kai norisi paprastos žalios atramos be sudėtingo ritualo. Ji gali tapti Jūsų dienos vidurio įpročiu — su vandeniu, kokteiliu ar kitu įprastu pasirinkimu.</p>
-        <a href="https://www.biyoma.lt/produktas/spirulina/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-spirulina" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; font-size:13px;font-weight:700;color:#5C7A0D;border-bottom:2px solid #cfe08a;padding-bottom:2px;">Plačiau apie SPIRULINA &rarr;</a></td><td class="stack imgcol" width="40%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 14px;background:linear-gradient(160deg,#F4F8E6 0%,#FAFBF1 100%);"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c3-p-spirulina.png" width="178" alt="BIYOMA SPIRULINA" style="width:178px;max-width:178px;height:auto;margin:0 auto;filter:drop-shadow(0 16px 26px rgba(10,20,10,0.30));"></td></tr></table></td></tr><tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:14px 30px;background:#ffffff;">
-      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(10,20,10,0.06);"><tr><td class="stack imgcol" width="40%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 14px;background:linear-gradient(160deg,#F4F8E6 0%,#FAFBF1 100%);"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c3-p-sleep.png" width="178" alt="BIYOMA SLEEP MAX" style="width:178px;max-width:178px;height:auto;margin:0 auto;filter:drop-shadow(0 16px 26px rgba(10,20,10,0.30));"></td><td class="stack txtcol" width="60%" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:30px 32px;">
+        <a href="https://www.biyoma.lt/produktas/spirulina/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-spirulina" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; font-size:13px;font-weight:700;color:#5C7A0D;border-bottom:2px solid #cfe08a;padding-bottom:2px;">Plačiau apie SPIRULINA &rarr;</a></td><td class="stack imgcol" width="40%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 14px;background:#F4F8E6;background:linear-gradient(160deg,#F4F8E6 0%,#FAFBF1 100%);"><a href="https://www.biyoma.lt/produktas/spirulina/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-spirulina" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c3-p-spirulina.png" width="178" alt="BIYOMA SPIRULINA" border="0" style="width:178px;max-width:178px;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a></td></tr></table></td></tr><tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:14px 30px;background:#ffffff;">
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-family:'Montserrat',Arial,sans-serif; background:#ffffff;border:1px solid #EBEBEB;border-radius:18px;overflow:hidden;box-shadow:0 8px 22px rgba(10,20,10,0.06);"><tr><td class="stack imgcol" width="40%" align="center" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:26px 14px;background:#F4F8E6;background:linear-gradient(160deg,#F4F8E6 0%,#FAFBF1 100%);"><a href="https://www.biyoma.lt/produktas/sleep/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-sleep" target="_blank" style="text-decoration:none;display:block;"><img src="https://cdn.jsdelivr.net/gh/elaiskai/biyoma-email-assets@main/products/2026-06/c3-p-sleep.png" width="178" alt="BIYOMA SLEEP MAX" border="0" style="width:178px;max-width:178px;height:auto;margin:0 auto;display:block;border:0;outline:none;text-decoration:none;"></a></td><td class="stack txtcol" width="60%" valign="middle" style="font-family:'Montserrat',Arial,sans-serif; padding:30px 32px;">
         <span style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:100px;padding:5px 14px;font-size:11px;font-weight:700;text-transform:uppercase;">Vakaras</span>
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:15px 0 4px;font-size:13px;color:#5C7A0D;font-weight:700;text-transform:uppercase;">SLEEP MAX</p>
         <h3 style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 10px;font-size:21px;line-height:27px;color:#0A140A;font-weight:700;letter-spacing:-0.02em;">Ramesnis perėjimas į vakarą</h3>
@@ -94,7 +111,7 @@ Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:15.5px;line-height:25px;color:#0A140A;text-align:center;">Vasarą nebūtina griežta dienotvarkė. Kartais pakanka trijų pastovių momentų, kad diena turėtų daugiau struktūros ir Jūsų įpročiai liktų lengvai atpažįstami.</p></td></tr>
       <tr><td class="px" style="font-family:'Montserrat',Arial,sans-serif; padding:38px 38px 34px;background:#ffffff;text-align:center;">
         <h2 class="h2" style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 18px;font-size:23px;line-height:30px;color:#0A140A;font-weight:700;letter-spacing:-0.02em;">Visi BIYOMA® produktai — vienoje vietoje</h2>
-        <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-cta" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;color:#ffffff;border-radius:30px;padding:15px 34px;font-size:15px;font-weight:700;">Apžvelgti katalogą &rarr;</a></td></tr>
+        <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=biyoma-2026-06-c3-cta" target="_blank" style="font-family:'Montserrat',Arial,sans-serif; display:inline-block;background:#9BBF1D;white-space:nowrap;color:#ffffff;border-radius:30px;padding:15px 34px;font-size:15px;font-weight:700;">Apžvelgti katalogą &rarr;</a></td></tr>
       <tr><td align="center" style="font-family:'Montserrat',Arial,sans-serif; padding:18px 30px;background:#F4F8E6;">
         <p style="font-family:'Montserrat',Arial,sans-serif; margin:0;font-size:12px;line-height:19px;color:#5C7A0D;">BIYOMA® formulės gaminamos ES, laikantis GMP, GHP, H.A.C.C.P. ir ISO22000:2018 gamybos standartų.</p></td></tr>
 
@@ -133,7 +150,7 @@ Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.
             </p>
 
             <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px 0; text-align:center; font-size:11px; line-height:16px; color:#888888;">
-              Jeigu nebenorite gauti mūsų laiškų, galite <a href="{{ omnisend.unsubscribeUrl }}" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">atsisakyti prenumeratos</a> arba susisiekti su mumis dėl kontaktų pašalinimo.
+              Jeigu nebenorite gauti mūsų laiškų, galite <a href="[[unsubscribe_link]]" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">atsisakyti prenumeratos</a> arba susisiekti su mumis dėl kontaktų pašalinimo.
             </p>
 
             <p style="font-family:'Montserrat',Arial,sans-serif; margin:0 0 14px 0; text-align:center; font-size:11px; line-height:16px; color:#888888;">
@@ -141,7 +158,7 @@ Rytas. Popietė. Vakaras. Trys atramos taškai ilgesnei dienai.
             </p>
 
             <p style="font-family:'Montserrat',Arial,sans-serif; margin:0; text-align:center; font-size:12px;">
-              <a href="{{ omnisend.unsubscribeUrl }}" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">Atsisakyti prenumeratos</a>
+              <a href="[[unsubscribe_link]]" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">Atsisakyti prenumeratos</a>
               &nbsp;·&nbsp;
               <a href="https://www.biyoma.lt/?utm_source=omnisend&utm_medium=email&utm_campaign={{ campaign.name }}&utm_content=footer_home" style="font-family:'Montserrat',Arial,sans-serif; color:#9bbf1d; text-decoration:underline;">biyoma.lt</a>
               &nbsp;·&nbsp;
